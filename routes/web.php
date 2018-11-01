@@ -11,18 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/', 'FrontAndController@page')->name('home');
 
-Route::get('/about', function () {
-    return view('pages.about');
-})->name('about');
+Route::get('/about', 'FrontAndController@page')->name('about');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-})->name('contact');
+Route::get('/contact', 'FrontAndController@page')->name('contact');
 
-Route::get('/blog', function () {
-    return view('pages.blog');
-})->name('blog');
+Route::get('/blog', 'FrontAndController@page')->name('blog');

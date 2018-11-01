@@ -3,7 +3,7 @@
 @section('content')
 
     @component('partials.hero')
-        This is my homepage
+        {{ $page_title }}
     @endcomponent
 
     @include('partials.nav')
